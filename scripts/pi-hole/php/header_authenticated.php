@@ -179,9 +179,9 @@ if ($auth) {
         <!-- Logo -->
         <a href="index.php" class="logo">
             <!-- mini logo for sidebar mini 50x50 pixels -->
-            <span class="logo-mini">P<strong>h</strong></span>
+            <span class="logo-mini">S<strong>L</strong></span>
             <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg">Pi-<strong>hole</strong></span>
+            <span class="logo-lg">Safe<strong>Lock</strong></span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top">
@@ -193,12 +193,26 @@ if ($auth) {
             </a>
             <div class="navbar-custom-menu">
                 <ul class="nav navbar-nav">
-                    <li<?php echo !$hostname ? ' class="hidden"' : ''; ?>>
-                        <p class="navbar-text">
-                            <span class="hidden-xs">hostname:</span>
-                            <code><?php echo $hostname; ?></code>
-                        </p>
-                    </li>
+                 <li class="menu-main<?php if ($scriptname === 'index.php') { ?> active<?php } ?>">
+                    <a href="index.php">
+                        <i class="fa fa-fw menu-icon fa-home"></i> <span>Dashboard</span>
+                    </a>
+                </li>
+                
+                <li class="menu-analysis<?php if ($scriptname === 'queries.php') { ?> active<?php } ?>">
+                    <a href="queries.php">
+                        <i class="fa fa-fw menu-icon fa-file-alt"></i> <span>Query Log</span>
+                    </a>
+                </li>
+                
+                    
+                <li class="menu-group<?php if ($scriptname === 'groups-adlists.php') { ?> active<?php } ?>">
+                    <a href="groups-adlists.php">
+                        <i class="fa fa-fw menu-icon fa-shield-alt"></i> <span>Adlists</span>
+                    </a>
+                </li>
+                
+
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                             <i class="fa fa-bars"></i>
@@ -206,19 +220,19 @@ if ($auth) {
                         <ul class="dropdown-menu">
                             <!-- User image -->
                             <li class="user-header">
-                                <img class="logo-img" src="img/logo.svg" alt="Pi-hole Logo" style="border: 0" width="90" height="90">
+                                <img class="logo-img" src="img/Logos_OpenLock/LogoytítuloOpenLock_No_Background.png" alt="Pi-hole Logo" style="border: 0" width="90" height="90">
                                 <p>
-                                    Open Source Ad Blocker
+                                    OpenLock Ciberseguridad
                                 </p>
                             </li>
                             <!-- Menu Body -->
                             <!-- <li class="user-body"></li> -->
                             <!-- Menu Footer -->
                             <li class="user-footer">
-                                <a class="btn-link" href="https://pi-hole.net/" rel="noopener" target="_blank">
-                                    <svg class="svg-inline--fa fa-fw menu-icon" style="height: 1.25em"><use xlink:href="img/pihole_icon.svg#pihole-svg-logo"/></svg>
-                                    Pi-hole Website
-                                </a>
+                                <a class="btn-link" href="http://openlocksecurity.com/" rel="noopener" target="_blank">
+                                    <svg class="svg-inline--fa fa-fw menu-icon" style="height: 1.25em"><use src="img/Logos_OpenLock/OpenLock_logo_No_background.png"/></svg>
+                                    OpenLock Website
+                                </>
                                 <hr>
                                 <a class="btn-link" href="https://docs.pi-hole.net/" rel="noopener" target="_blank"><i class="fa fa-fw menu-icon fa-question-circle"></i> Documentation</a>
                                 <a class="btn-link" href="https://discourse.pi-hole.net/" rel="noopener" target="_blank"><i class="fa fa-fw menu-icon fab fa-discourse"></i> Pi-hole Forum</a>

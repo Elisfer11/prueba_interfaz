@@ -386,7 +386,7 @@ td.lookatme {
   position: relative;
   color: #fff;
   float: left;
-  background: none;
+  background: #a6a6a6;
   padding: 15px;
   width: 50px;
   text-align: center;
@@ -413,11 +413,11 @@ td.lookatme {
 .sidebar-menu > li.header {
   color: transparent;
   font-size: 0;
-  padding: 1px;
+  padding: 10px;
 }
 
 .box {
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .small-box {

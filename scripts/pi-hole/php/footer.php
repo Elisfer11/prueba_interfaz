@@ -56,11 +56,7 @@ if (isset($core_commit) || isset($web_commit) || isset($FTL_commit)) {
 }
 ?>
     <footer class="main-footer">
-        <div class="row row-centered text-center">
-            <div class="col-xs-12 col-sm-6">
-                <strong><a href="https://pi-hole.net/donate/" rel="noopener" target="_blank"><i class="fa fa-heart text-red"></i> Donate</a></strong> if you found this useful.
-            </div>
-        </div>
+
 
         <div class="row row-centered text-center version-info">
             <div class="col-xs-12 col-sm-12 col-md-10">
@@ -73,7 +69,7 @@ if (isset($core_commit) || isset($web_commit) || isset($FTL_commit)) {
                     </li>
                     <?php } ?>
                     <li>
-                        <strong>Pi-hole</strong>
+                        <strong>SafeLock</strong>
                         <?php echo $coreVersionStr; ?>
                         <?php if ($core_update) { ?> &middot; <a class="lookatme" lookatme-text="Update available!" href="<?php echo $coreUrl.'/latest'; ?>" rel="noopener" target="_blank">Update available!</a><?php } ?>
                     </li>
