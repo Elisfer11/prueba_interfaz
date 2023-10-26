@@ -22,14 +22,14 @@ $hostname = gethostname() ? gethostname() : '';
 
     <title>SafeLock<?php echo $hostname ? ' - '.$hostname : ''; ?></title>
 
-    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="apple-touch-icon" href="img/Logos_OpenLock/OpenLock_logo_No_Background.jpeg" sizes="180x180">
     <link rel="icon" href="" sizes="32x32" type="image/png">
-    <link rel="icon" href="img/Logos OpenLock/OpenLock logo.jpeg" sizes="16x16" type="image/png">
-    <link rel="manifest" href="img/favicons/manifest.json">
-    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="<?php echo $theme_color; ?>">
-    <link rel="shortcut icon" href="img/favicons/favicon.ico">
+    <link rel="icon" href="img/Logos_OpenLock/OpenLock_logo_No_Background.jpeg" sizes="16x16" type="image/png">
+    <link rel="manifest" href="img/Logos_OpenLock/OpenLock_logo_No_Background.jpeg">
+    <link rel="mask-icon" href="img/Logos_OpenLock/OpenLock_logo_No_Background.jpeg" color="<?php echo $theme_color; ?>">
+    <link rel="shortcut icon" href="img/Logos_OpenLock/OpenLock_logo_No_Background.jpeg">
     <meta name="msapplication-TileColor" content="<?php echo $theme_color; ?>">
-    <meta name="msapplication-TileImage" content="img/favicons/mstile-150x150.png">
+    <meta name="msapplication-TileImage" content="img/Logos_OpenLock/OpenLock_logo_No_Background.jpeg">
 
     <!-- Theme styles -->
     <meta name="theme-color" content="<?php echo $theme_color; ?>">
