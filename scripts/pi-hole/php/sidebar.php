@@ -1,11 +1,11 @@
-    <!-- Left side column. contains the logo and sidebar -->
+ <!-- Left side column. contains the logo and sidebar -->
     <aside class="main-sidebar">
         <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
             <!-- Sidebar user panel -->
             <div class="user-panel">
                 <div class="pull-left image">
-                    <img class="logo-img" src="img/Logos_OpenLock/Logo_inverso_No_Background.svg" alt="SafeLock logo">
+                    <img class="logo-img" src="img/Logos_OpenLock/Logo_inverso_No_Background.svg" alt="Pi-hole logo">
                 </div>
                 <div class="pull-left info">
                     <p>Status</p>
@@ -265,9 +265,10 @@
                 <!-- Settings -->
                 <li class="menu-system<?php if ($scriptname === 'settings.php') { ?> active<?php } ?>">
                     <a href="settings.php">
-                        <i class="fa fa-fw menu-icon fa-cog"></i> <span>Settings</
+                        <i class="fa fa-fw menu-icon fa-cog"></i> <span>Settings</span>
                     </a>
                 </li>
+
             </ul>
         </section>
         <!-- /.sidebar -->
