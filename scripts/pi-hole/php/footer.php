@@ -69,25 +69,14 @@ if (isset($core_commit) || isset($web_commit) || isset($FTL_commit)) {
                     </li>
                     <?php } ?>
                     <li>
-                        <strong>SafeLock</strong>
-                        <?php echo $coreVersionStr; ?>
-                        <?php if ($core_update) { ?> &middot; <a class="lookatme" lookatme-text="Update available!" href="<?php echo $coreUrl.'/latest'; ?>" rel="noopener" target="_blank">Update available!</a><?php } ?>
-                    </li>
-                    <li>
-                        <strong>FTL</strong>
-                        <?php echo $ftlVersionStr; ?>
-                        <?php if ($FTL_update) { ?> &middot; <a class="lookatme" lookatme-text="Update available!" href="<?php echo $ftlUrl.'/latest'; ?>" rel="noopener" target="_blank">Update available!</a><?php } ?>
-                    </li>
-                    <li>
-                        <strong>Web Interface</strong>
-                        <?php echo $webVersionStr; ?>
-                        <?php if ($web_update) { ?> &middot; <a class="lookatme" lookatme-text="Update available!" href="<?php echo $webUrl.'/latest'; ?>" rel="noopener" target="_blank">Update available!</a><?php } ?>
+                        <strong>Powered by</strong><a class="btn-link" href="http://openlocksecurity.com/" rel="noopener" target="_blank"> OpenLock</a>
+
                     </li>
                 </ul>
 
                 <p style="margin: 15px 0 0;">
                     <?php if ($docker_update) { ?>
-                        To install updates, <a href="https://github.com/pi-hole/docker-pi-hole#upgrading-persistence-and-customizations" rel="noopener" target="_blank">replace this old container with a fresh upgraded image</a>.
+                        To install updates, <a href="https://github.com/pi-hole/docker-pi-hole#upgrading-persistence-and-customizations" rel="noopener" tasrget="_blank">replace this old container with a fresh upgraded image</a>.
                     <?php } elseif ($core_update || $web_update || $FTL_update) { ?>
                         To install updates, run <code><a href="https://docs.pi-hole.net/main/update/" rel="noopener" target="_blank">pihole -up</a></code>.
                     <?php } ?>
