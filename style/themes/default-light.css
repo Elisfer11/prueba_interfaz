@@ -87,6 +87,8 @@
   text-decoration: none;
 }
 
+
+
 /* Donate Sidebar Button */
 .sidebar-menu > li.menu-donate:hover > a,
 .sidebar-menu > li.menu-donate > a:focus {
@@ -158,5 +160,26 @@ sidebar-form input[type="text"]:focus,
 }
 .nav-tabs-custom > .nav-tabs > li > a:focus {
   color: #3c8dbc;
+}
+
+.queries-permitted {
+  background-color: #00a65a; /* Green background for "queries-permitted" */
+}
+
+.queries-blocked {
+  background-color: #999; /* Gray background for "queries-blocked" */
+}
+
+/* Status */
+.status-active {
+  color: #00a65a; /* Green text for "Active" */
+}
+
+.status-load {
+  color: #00a65a; /* Green text for "Load" */
+}
+
+.status-memory {
+  color: #00a65a; /* Green text for "Memory usage" */
 }
 

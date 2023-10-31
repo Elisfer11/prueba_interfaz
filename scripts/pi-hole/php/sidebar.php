@@ -5,7 +5,7 @@
             <!-- Sidebar user panel -->
             <div class="user-panel">
                 <div class="pull-left image">
-                    <img class="logo-img" src="img/Logos_OpenLock/Logo_inverso_No_Background.svg" alt="Pi-hole logo">
+                    <img class="logo-img" src="img/Logos_OpenLock/Logo_inverso_No_Background.png" alt="Pi-hole logo">
                 </div>
                 <div class="pull-left info">
                     <p>Status</p>
