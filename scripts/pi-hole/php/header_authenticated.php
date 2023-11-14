@@ -180,7 +180,7 @@ if ($auth) {
         <a href="index.php" class="logo">
             <!-- mini logo for sidebar mini 50x50 pixels -->
             <span class="logo-mini">S<strong>L</strong></span>
-            <!-- logo for regular state and mobile devices -->
+	            <!-- logo for regular state and mobile devices -->
             <span class="logo-lg">Safe<strong>Lock</strong></span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
@@ -193,25 +193,45 @@ if ($auth) {
             </a>
             <div class="navbar-custom-menu">
                 <ul class="nav navbar-nav">
-                 <li class="menu-main<?php if ($scriptname === 'index.php') { ?> active<?php } ?>">
-                    <a href="index.php">
-                        <i class="fa fa-fw menu-icon fa-home"></i> <span>Dashboard</span>
-                    </a>
-                </li>
-                
-                <li class="menu-analysis<?php if ($scriptname === 'queries.php') { ?> active<?php } ?>">
-                    <a href="queries.php">
-                        <i class="fa fa-fw menu-icon fa-file-alt"></i> <span>Query Log</span>
-                    </a>
-                </li>
-                
-                    
-                <li class="menu-group<?php if ($scriptname === 'groups-adlists.php') { ?> active<?php } ?>">
-                    <a href="groups-adlists.php">
-                        <i class="fa fa-fw menu-icon fa-shield-alt"></i> <span>Adlists</span>
-                    </a>
-                </li>
-                
+                  <li id="correo-li">
+                        <a href="#" onclick="mostrarDialogoCorreo()">Correo: <span id="correo-actual"></span></a>
+                    </li>
+                    <li id="agregar-correo-li">
+                         <a href="#" onclick="agregarCorreo()">Agregar Correo</a>
+                    </li>
+
+		    <!-- Formulario para agregar correo -->
+		    <div id="formulario-correo" style="display: none;">
+   		    <form id="formulario-agregar-correo">
+        	        <input type="text" id="nuevo-correo" placeholder="Ingrese nuevo correo">
+       		        <button type="button" onclick="guardarCorreo()">Guardar</button>
+   		    </form>
+		    </div>
+
+<script>
+    function agregarCorreo() {
+        // Oculta el enlace "Agregar Correo"
+        document.getElementById('agregar-correo-li').style.display = 'none';
+
+        // Muestra el formulario
+        document.getElementById('formulario-correo').style.display = 'block';
+    }
+</script>
+
+
+<script>
+    function agregarCorreo() {
+        // Oculta el enlace "Agregar Correo"
+        document.getElementById('agregar-correo-li').style.display = 'none';
+
+        // Muestra el formulario
+        document.getElementById('formulario-correo').style.display = 'block';
+    }
+</script>
+
+
+
+
 
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
