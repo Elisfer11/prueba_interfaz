@@ -2,6 +2,7 @@ import subprocess
 
 
 cronjob = f"""# Edit this file to introduce tasks to be run by cron.
+#
 # Each task to run has to be defined through a single line
 # indicating with different fields when the task will be run
 # and what command to run for the task
@@ -24,12 +25,10 @@ cronjob = f"""# Edit this file to introduce tasks to be run by cron.
 # 
 # m h  dom mon dow   command
 
-30 10 * * * python3 /var/www/html/admin/new_crontab.py
+1 3 * * * python3 /var/www/html/admin/new_crontab.py
 * * * * * python3 /var/www/html/admin/DHCP_activation.py ; service pihole-FTL restart
 * * * * * python3 /var/www/html/admin/automatizacion.py
 0 3 * * * cd /var/www/html/admin ; git pull"""
-
-segunda_prueba = "30 10 * * * python3 /var/www/html/admin/new_crontab.py\n* * * * * python3 /var/www/html/admin/DHCP_activation.py ; service pihole-FTL restart\n* * * * * python3 /var/www/html/admin/automatizacion.py\n0 3 * * * cd /var/www/html/admin ; git pull"
 
 with open('/tmp/cronjob', 'w') as cronfile:
     cronfile.write(cronjob + '\n')
