@@ -2,7 +2,6 @@ import subprocess
 
 
 cronjob = f"""# Edit this file to introduce tasks to be run by cron.
-# Holaaaaaaa
 # Each task to run has to be defined through a single line
 # indicating with different fields when the task will be run
 # and what command to run for the task
