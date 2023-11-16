@@ -1,4 +1,4 @@
-me sigue dando el error import subprocess
+import subprocess
 
 
 cronjob = f"""# Edit this file to introduce tasks to be run by cron.
