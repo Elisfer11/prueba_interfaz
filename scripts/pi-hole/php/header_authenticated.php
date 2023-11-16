@@ -194,43 +194,11 @@ if ($auth) {
             <div class="navbar-custom-menu">
                 <ul class="nav navbar-nav">
                   <li id="correo-li">
-                        <a href="#" onclick="mostrarDialogoCorreo()">Correo: <span id="correo-actual"></span></a>
+                        <a href="#">Correo: <span id="correo-actual"></span></a>
                     </li>
                     <li id="agregar-correo-li">
-                         <a href="#" onclick="agregarCorreo()">Agregar Correo</a>
+                         <a href="scripts/pi-hole/php/registro_correo.html">Agregar Correo</a>
                     </li>
-
-		    <!-- Formulario para agregar correo -->
-		    <div id="formulario-correo" style="display: none;">
-   		    <form id="formulario-agregar-correo">
-        	        <input type="text" id="nuevo-correo" placeholder="Ingrese nuevo correo">
-       		        <button type="button" onclick="guardarCorreo()">Guardar</button>
-   		    </form>
-		    </div>
-
-<script>
-    function agregarCorreo() {
-        // Oculta el enlace "Agregar Correo"
-        document.getElementById('agregar-correo-li').style.display = 'none';
-
-        // Muestra el formulario
-        document.getElementById('formulario-correo').style.display = 'block';
-    }
-</script>
-
-
-<script>
-    function agregarCorreo() {
-        // Oculta el enlace "Agregar Correo"
-        document.getElementById('agregar-correo-li').style.display = 'none';
-
-        // Muestra el formulario
-        document.getElementById('formulario-correo').style.display = 'block';
-    }
-</script>
-
-
-
 
 
                     <li class="dropdown user user-menu">
