@@ -193,12 +193,54 @@ if ($auth) {
             </a>
             <div class="navbar-custom-menu">
                 <ul class="nav navbar-nav">
-                  <li id="correo-li">
-                        <a href="#">Correo: <span id="correo-actual"></span></a>
-                    </li>
-                    <li id="agregar-correo-li">
-                         <a href="scripts/pi-hole/php/registro_correo.html">Agregar Correo</a>
-                    </li>
+
+
+                    <li id="correo-li">
+    <a href="#">Correo: <span id="correo-actual"></span></a>
+		    </li>
+
+    <script>
+        $(document).ready(function() {
+            // Función para cargar y mostrar el correo actual
+            function cargarCorreo() {
+                $.ajax({
+                    url: "scripts/pi-hole/php/CORREO/correo_almacenado.txt?_=" + new Date().getTime(),
+                    type: "GET",
+                    success: function(data) {
+                        if (data.trim() !== "") {
+                            $("#correo-actual").text(data.trim());
+                        } else {
+                            $("#correo-actual").text("Ninguno");
+                        }
+                    },
+                    error: function() {
+                        $("#correo-actual").text("Error al cargar el correo");
+                    }
+                });
+            }
+
+            // Cargar el correo al cargar la página
+            cargarCorreo();
+
+            // Actualizar el correo cada 10 segundos (puedes ajustar este valor)
+            setInterval(cargarCorreo, 2000);
+        });
+    </script>
+
+
+
+                    <!-- Agrega un nuevo enlace que abrirá la ventana emergente -->
+		  <li id="agregar-correo-li">
+   		      <a href="#" onclick="abrirVentanaEmergente()">Agregar Correo</a>
+		  </li>
+
+<script>
+function abrirVentanaEmergente() {
+    // Abre la ventana emergente centrada en la pantalla
+    var ventanaEmergente = window.open('scripts/pi-hole/php/CORREO/registro_correo.php', 'RegistroCorreo', 'width=600, height=400, top=' + (screen.height/2 - 200) + ', left=' + (screen.width/2 - 300));
+
+}
+</script>
 
 
                     <li class="dropdown user user-menu">
